@@ -1,16 +1,13 @@
-import ListGroup from "./components/ListGroup/ListGroup";
+import ListGroup from "./components/ListGroup/index";
 
 function App() {
   const items = ["New York", "Los Angeles", "San Francisco"];
 
   return (
     <div>
-      <ListGroup
-        heading="Miami"
-        items={items}
-        onSelectedItem={() => items}
-      ></ListGroup>
-      test('should first', () => { "test" })
+      <ListGroup heading="Miami" items={items} onSelectedItem={() => {}} />
     </div>
   );
 }
+
+export default App;
